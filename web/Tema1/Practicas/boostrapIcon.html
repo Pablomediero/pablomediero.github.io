@@ -1,0 +1,95 @@
+<!-- EJEMPLO DE ICONOS
+Insertar enlace
+por cada icono insertar <i>
+ICONO
+Codigo de ese icono
+Icono en Boton
+Como se hace 
+Cambio de tamaño
+Decoracion
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>ICONOS BOOSTRAP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- LINKS PARA ACCEDER A LOS ICONOS ALMACENADOS EN HOJAS DE ESTILOS DE CADA VERSION DE BOOSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    </head>
+    <body class="container">
+
+    <h1>ICONOS</h1>
+    
+    <!-- AÑADIR ICONOS -->
+    <div class="addIcons" style="text-align: justify;">
+        <h2>AÑADIR ICONOS</h2>
+        <p>Para poder añadir los iconos primero de todo tendremos que acceder con un link a la hoja de estilos de Boostrap</p>  
+        <p><i>&lt;link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</i>&gt;</p>
+        <p>Para poder insertar un icono tendremos que utilizar la etiqueta &lt;i&gt; con el atributo <i>class</i> donde introduciremos el nombre del icono deseado</p>
+        <p>Ejemplo de Inserci&oacute;n:</p>
+        <p><i>&lt;i class="glyphicon glyphicon-cloud"&gt;&lt;/i&gt;</i></p>
+        <p>Para poder cambiar de icono en este caso tendremos que cambiar la ultima palabra por la que referencie al icono deseado</p>
+        <p>Ejemplos:</p>
+            <i class="glyphicon glyphicon-cloud"></i>
+            <i class="glyphicon glyphicon-remove"></i>
+            <i class="glyphicon glyphicon-user"></i>
+            <i class="glyphicon glyphicon-envelope"></i>
+            <i class="glyphicon glyphicon-thumbs-up"></i>
+    </div>
+    <br>
+    <!-- EDITAR ICONOS -->
+    <div class="editIcons">
+        <h2>EDICION DE ICONOS</h2>
+        <p>Para poder editar un icono tendremos que agregar el atributo <i>Style</i> y lo que se quiera añadir</p>
+        <p>Ejemplos:</p>
+            <br>
+            <p>Tamaño de letra:</p>
+            <i class="glyphicon glyphicon-cloud" style="font-size:35px;"></i><br>
+            <p><i>&lt;i class="glyphicon glyphicon-cloud style="font-size:36px;"&gt;&lt;/i&gt;</i></p>
+            <br>
+            <p>Tamaño de letra y color:</p>
+            <i class="glyphicon glyphicon-cloud" style="font-size:35px;color:red;"></i><br>
+            <p><i>&lt;i class="glyphicon glyphicon-cloud style="font-size:48px;color:red;"&gt;&lt;/i&gt;</i></p>
+            <br>
+            <p>Tamaño de letra, color y sombras</p>
+            <i class="glyphicon glyphicon-cloud" style="font-size:35px;color:lightblue; text-shadow: 2px 2px 4px #000000;"></i><br>
+            <p><i>&lt;i class="glyphicon glyphicon-cloud style="font-size:60px;color:lightblue; text-shadow: 2px 2px 4px #000000;"&gt;&lt;/i&gt;</i></p>
+    </div>
+    <br>
+    <!-- DECORAR ICONOS -->
+    <div class="conIcons">
+        <h2>COMBINACIONES DE ESTILOS</h2>
+        <p>Tambien se pueden realizar distintas combinaciones, por ejemplo podemos combinar un icono con un elemento button</p>
+        <p>Para poder realizar una combinacion tendremos que definir un elemento cualquiera e introducir distintos atributos de estilo</p>
+        <p>Ejemplo:</p>
+        <p>Para poder editar un icono a un boton primero crearemos el bot&oacute; mediante las etiquetas &lt;Button&gt;</p>
+        <p>Si queremos decorarlo tendremos que agregar el atributo <i>Style</i> y lo que se quiera añadir</p>
+        <br>
+        <p>Tamaño de letra y color:</p>
+        <button  class="glyphicon glyphicon-cloud" style="font-size:18px;color:red;"> Boton</button><br>
+        <p><i>&lt;button class="glyphicon glyphicon-cloud style="font-size:18px;color:red;"&gt;&lt;/button&gt;</i></p>
+    </div>
+    <br>
+    <!-- AÑADIR ICONOS DE OTRA VERSION DE BOOSTRAP -->
+    <div class="versIcons">
+        <h2>Versiones</h2>
+        <p>En Boostrap existen diferentes versiones y hay algun pequeño cambio en la inserci&oacute;n de los iconos</p>
+        <p>La version anterior es Boostrap 3 y vamos a ver otras versiones existentes y las diferencias que muestran</p>
+        <h3>Boostrap 4</h3>
+        <p>Para trabajar con Boostrap 4 primero de todo hay que insertar el link para que pueda acceder a la hoja de estilos</p>
+        <p><i>&lt;link rel="stylesheet"   href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"</i>&gt;</p>
+        <p>Para poder insertar un icono tendremos que utilizar la etiqueta &lt;i&gt; o &lt;span&gt; con el atributo <i>class</i> donde introduciremos el nombre del icono deseado</p>
+        <p>Ejemplo de Inserci&oacute;n:</p>
+        <p><i>&lt;i class="fas fa-cloud"&gt;&lt;/i&gt</i></p>
+        <p>Para poder cambiar de icono en este caso tendremos que cambiar la ultima palabra por la que referencie al icono deseado</p>
+        <p>Ejemplos:</p>
+            <i class="fas fa-cloud"></i>
+            <i class="fas fa-coffee"></i>
+            <i class="fas fa-car"></i>
+            <i class="fas fa-file"></i>
+            <i class="fas fa-bars"></i>
+    </div>
+   
+    </body>
+</html>
