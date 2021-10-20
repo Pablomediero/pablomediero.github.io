@@ -5,7 +5,7 @@
 
 #header {
     margin:1em;
-    width:500px;
+    width: max-content;
     font-family:Arial, Helvetica, sans-serif;
 }
 
