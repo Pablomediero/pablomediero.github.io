@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+</head>
+<body>
+    <header>
+        <button onclick="playVideo();">
+             <i class="glyphicon glyphicon-play"></i>
+        </button>
+        <button onclick="pauseVideo();">
+             <i class="glyphicon glyphicon-pause"></i>
+        </button>
+        <button onclick="stopVideo()">
+             <i class="glyphicon glyphicon-stop"></i>
+        </button> 
+        <button onclick="rewindVideo();" >
+             <i class="glyphicon glyphicon-fast-backward"></i>
+        </button>
+       </header>
+<video width="480" height="320" id="myVideo">
+   <source src="movie_clip.mp4" type="video/mp4" />
+   <source src="movie_clip.ogg" type="video/ogg" />
+   El navegador no permite el <video> Video. 
+</video>
+
+<script>
+    theVideo = document.querySelector("#myVideo");
+
+    function playVideo() {
+       theVideo.play();
+    }
+    
+    function pauseVideo() {
+       theVideo.pause();
+    }
+
+    function stopVideo() {
+       theVideo.currentTime = 0;
+       theVideo.pause();
+    }
+    
+    function rewindVideo() {
+       theVideo.currentTime = 0;
+    }
+</script>
+</body>
+</html>

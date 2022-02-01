@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilo.css" type="text/css">
+</head>
+<body>
+      <section>
+            <article id="contenedorVideos">
+                  <video width="480" height="320" id="Agricultura" controls="controls" poster="imagen/granja.jpg">
+                        <source src="video/Tractor.mp4" type="video/mp4" />
+                        <source src="video/Tractor.ogg" type="video/ogg" />
+                        <track src="idioma.en.vtt" label="English" kind="captions" srclang="en">
+                        <track src="idioma.al.vtt" label="Aleman" kind="captions" srclang="al">
+                        El navegador no permite el Video. 
+                  </video>
+            </article>
+            <article>
+                  <video width="480" height="320" id="Ovejas" controls="controls" poster="imagen/granja.jpg"> 
+                        <source src="video/Ovejas.mp4" type="video/mp4" />
+                        <source src="video/Ovejas.ogg" type="video/ogg" />
+                        <track src="idioma.en.vtt" label="English" kind="captions" srclang="en">
+                        <track src="idioma.al.vtt" label="Aleman" kind="captions" srclang="al">
+                        El navegador no permite el Video. 
+                  </video>
+            </article>
+      </section>
+      <section>
+            <article id="contenedorBotones">
+                  <button onclick="playVideo();">
+                        <i class="fas fa-play"></i>
+                  </button>
+                  <button onclick="pauseVideo();">
+                        <i class="fas fa-pause"></i>
+                  </button>
+                  <button onclick="stopVideo()">
+                        <i class="fas fa-stop"></i>
+                  </button> 
+                  <button onclick="rewindVideo();" >
+                        <i class="fas fa-backward"></i>
+                  </button>
+            </article>
+      </section>
+      <section>
+            <article id="all">
+                  <h1>Using the track API to extract the content of webVTT files in <code>&lt;track&gt;</code> elements</h1>
+                  <p>Click on the buttons under the video to extract the english or german subtitles
+                  </p>
+                  <p>Look at the HTML and JS code.</p>
+                  <p>
+                  <p>
+                        <button disabled 
+                              id="buttonEnglish" 
+                              onclick="loadTranscript('en');">
+                        Display English transcript
+                        </button>
+                        
+                        <button disabled 
+                              id="buttonDeutsch" 
+                              onclick="loadTranscript('de');">
+                        Display Deutsch transcript
+                        </button>
+                  
+                        <button disabled 
+                              id="buttonEs" 
+                              onclick="loadTranscript('es');">
+                        Display Spanish transcript
+                        </button>
+                        
+                  </p>
+                  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
+                        <source src="http://mainline.i3s.unice.fr/mooc/elephants-dream-medium.mp4" type="video/mp4">
+                        <source src="http://mainline.i3s.unice.fr/mooc/elephants-dream-medium.webm" type="video/webm">
+                        <track label="English subtitles" kind="subtitles" srclang="en" src="http://mainline.i3s.unice.fr/mooc/elephants-dream-subtitles-en.vtt" >
+                        <track label="Deutsch subtitles" kind="subtitles" srclang="de" src="http://mainline.i3s.unice.fr/mooc/elephants-dream-subtitles-de.vtt" default>
+                        <track label="Spanish subtitles" kind="subtitles" srclang="es" src="es.vtt">
+                        <track label="English chapters" kind="chapters" srclang="en" src="http://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en.vtt">
+                  </video>
+                  <div id="transcript"></div>
+            </article>
+      </section>
+       
+
+      <script type="text/javascript" src="js/script.js"></script>
+       
+      <audio src="audio/music.mp3" autoplay="autoplay" loop="loop">
+      El navegador no permmite el audio
+      </audio>
+
+</body>
+</html>
