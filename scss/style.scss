@@ -47,17 +47,24 @@ header{
 }
 
 nav {
+    text-align: right;
     background-color: $colorSecundario;
     padding: 2%;
     height: 100%
 }
 
 nav p{
+    
     font-family: $tipografia_encabezado;
 }
 
 footer{
-    
+    padding: 2%;
+    justify-content: right;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     font-family: $tipografia_encabezado;
     display: flex;
     height: 60px;
@@ -68,4 +75,6 @@ footer{
     background-color: $colorPrimario_claro;
 }
 
-
+.imagenPrincipal{
+    justify-content: center;
+}
