@@ -1,0 +1,52 @@
+@import 'variables';
+
+body{
+    justify-content: center;
+    background-color: $colorSecundario_claro;
+    padding: 0;
+    margin: 0;
+    
+}
+
+main{
+    
+    background-color: $colorSecundario_oscuro;
+}
+
+section{
+    display: flex;
+    background-color: $colorSecundario;
+}
+
+article{
+    width: 100%;
+    background-color: $colorSecundario_claro;
+}
+
+li{
+    text-align: left;
+    list-style:none;
+}
+
+li:hover{
+    background-color: $colorSecundario_claro;
+}
+
+header{
+    text-align: center;
+    background-color: $colorPrimario;
+}
+
+nav {
+    background-color: $colorSecundario;
+    
+}
+
+footer{
+    display: flex;
+    background-color: $colorPrimario;
+}
+
+.seleccionado{
+    background-color: $colorPrimario_claro;
+}

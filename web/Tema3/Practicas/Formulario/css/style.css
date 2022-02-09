@@ -1,0 +1,20 @@
+body{
+    box-sizing: border-box;
+    
+}
+
+form{
+    border: solid 1px black;
+    padding: 5%;
+    
+}
+
+#contenedorForm{
+    margin: auto;
+    padding: 1%;
+    max-width: 500px;
+    
+    justify-content: center;
+    align-items: center;
+    
+}

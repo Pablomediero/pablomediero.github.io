@@ -1,0 +1,49 @@
+body {
+  justify-content: center;
+  background-color: #cfcfcf;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-color: #707070;
+}
+
+section {
+  display: flex;
+  background-color: #9e9e9e;
+}
+
+article {
+  width: 100%;
+  background-color: #cfcfcf;
+}
+
+li {
+  text-align: left;
+  list-style: none;
+}
+
+li:hover {
+  background-color: #cfcfcf;
+}
+
+header {
+  text-align: center;
+  background-color: #1e88e5;
+}
+
+nav {
+  background-color: #9e9e9e;
+}
+
+footer {
+  display: flex;
+  background-color: #1e88e5;
+}
+
+.seleccionado {
+  background-color: #6ab7ff;
+}
+
+/*# sourceMappingURL=style.css.map */
