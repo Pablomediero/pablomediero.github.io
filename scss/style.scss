@@ -1,5 +1,9 @@
 @import 'variables';
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 body{
     justify-content: center;
     background-color: $colorSecundario_claro;
@@ -9,13 +13,14 @@ body{
 }
 
 main{
-    
-    background-color: $colorSecundario_oscuro;
+    background-color: $colorSecundario_claro;
+    height: 590px;
 }
 
 section{
+    height: 100%;
     display: flex;
-    background-color: $colorSecundario;
+    background-color: $colorSecundario_claro;
 }
 
 article{
@@ -25,6 +30,8 @@ article{
 
 li{
     text-align: left;
+    padding: 1%;
+    font-family: $tipografia_parrafo;
     list-style:none;
 }
 
@@ -33,20 +40,32 @@ li:hover{
 }
 
 header{
+    height: 60px;
     text-align: center;
     background-color: $colorPrimario;
+    font-family: $tipografia_encabezado;
 }
 
 nav {
     background-color: $colorSecundario;
-    
+    padding: 2%;
+    height: 100%
+}
+
+nav p{
+    font-family: $tipografia_encabezado;
 }
 
 footer{
+    
+    font-family: $tipografia_encabezado;
     display: flex;
+    height: 60px;
     background-color: $colorPrimario;
 }
 
 .seleccionado{
     background-color: $colorPrimario_claro;
 }
+
+
