@@ -14,7 +14,7 @@ body{
 
 main{
     background-color: $colorSecundario_claro;
-    height: 590px;
+    height: 50vw;
 }
 
 section{
@@ -49,8 +49,8 @@ header{
 nav {
     text-align: right;
     background-color: $colorSecundario;
-    padding: 2%;
-    height: 100%;
+    padding: 1%;
+    height: 50vw;
     bottom: 0;
 }
 
@@ -79,3 +79,64 @@ footer{
 .imagenPrincipal{
     justify-content: center;
 }
+
+
+
+@media(max-width:1500px){
+    nav {
+        text-align: right;
+        background-color: $colorSecundario;
+        padding: 1%;
+        height: 88vw;
+        bottom: 0;
+    }
+}
+
+@media(max-width:1050px){
+    nav {
+        text-align: right;
+        background-color: $colorSecundario;
+        padding: 1%;
+        height: 120vw;
+        bottom: 0;
+    }
+}
+
+@media(max-width:800px){
+    nav {
+        text-align: right;
+        background-color: $colorSecundario;
+        padding: 1%;
+        height: 165vw;
+       
+    }
+}
+
+@media(max-width:500px){
+
+    section{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: $colorSecundario_claro;
+    }
+
+    nav {
+        text-align: center;
+        background-color: $colorSecundario;
+        
+        height: 90vw;
+        width: 100%;
+       
+    }
+
+    .seleccionado{
+        width: 340px;
+        background-color: $colorPrimario_claro;
+    }
+
+    article{
+        padding-top: 50px;
+    }
+}
+
