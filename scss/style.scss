@@ -14,7 +14,7 @@ body{
 
 main{
     background-color: $colorSecundario_claro;
-    height: 50vw;
+    height: 40vw;
 }
 
 section{
@@ -23,23 +23,29 @@ section{
     background-color: $colorSecundario_claro;
 }
 
-article{
+section article{
     width: 100%;
     background-color: $colorSecundario_claro;
 }
 
-li{
-    text-align: left;
-    padding: 1%;
-    font-family: $tipografia_parrafo;
-    list-style:none;
+section nav article{
+    padding: 0;
+    padding-left: 30px;
+    width: 100%;
+    background-color: $colorSecundario;
 }
 
-li:hover{
-    background-color: $colorSecundario_claro;
+a{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    color: rgb(32, 32, 32);
+    text-decoration:none;
+    font-family: $tipografia_parrafo;
 }
 
 header{
+    border: solid 1px black;
     height: 60px;
     text-align: center;
     background-color: $colorPrimario;
@@ -47,19 +53,29 @@ header{
 }
 
 nav {
-    text-align: right;
+    text-align: center;
     background-color: $colorSecundario;
-    padding: 1%;
-    height: 50vw;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    height: 40vw;
+    width: 20%;
     bottom: 0;
 }
 
+nav article{
+    width: 100%;
+    background-color: $colorSecundario;
+    margin-bottom: 3vw;
+}
+
 nav p{
-    
+    justify-content: center;
+    text-align: center;
     font-family: $tipografia_encabezado;
 }
 
 footer{
+    border: solid 1px black;
     padding: 2%;
     justify-content: right;
     position: absolute;
@@ -73,41 +89,24 @@ footer{
 }
 
 .seleccionado{
-    background-color: $colorPrimario_claro;
+    color: $colorPrimario_oscuro;
 }
 
 .imagenPrincipal{
     justify-content: center;
 }
 
-
-
-@media(max-width:1500px){
-    nav {
-        text-align: right;
-        background-color: $colorSecundario;
-        padding: 1%;
-        height: 88vw;
-        bottom: 0;
-    }
-}
-
-@media(max-width:1050px){
-    nav {
-        text-align: right;
-        background-color: $colorSecundario;
-        padding: 1%;
-        height: 120vw;
-        bottom: 0;
-    }
+.contenido{
+    padding: 3%;
 }
 
 @media(max-width:800px){
     nav {
         text-align: right;
         background-color: $colorSecundario;
-        padding: 1%;
-        height: 165vw;
+        padding-right: 1%;
+        width: 50%;
+        height: 100vw;
        
     }
 }
@@ -125,7 +124,7 @@ footer{
         text-align: center;
         background-color: $colorSecundario;
         
-        height: 90vw;
+        height: 140vw;
         width: 100%;
        
     }

@@ -12,7 +12,7 @@ body {
 
 main {
   background-color: #cfcfcf;
-  height: 50vw;
+  height: 40vw;
 }
 
 section {
@@ -21,23 +21,29 @@ section {
   background-color: #cfcfcf;
 }
 
-article {
+section article {
   width: 100%;
   background-color: #cfcfcf;
 }
 
-li {
-  text-align: left;
-  padding: 1%;
-  font-family: "Oswald", sans-serif;
-  list-style: none;
+section nav article {
+  padding: 0;
+  padding-left: 30px;
+  width: 100%;
+  background-color: #9e9e9e;
 }
 
-li:hover {
-  background-color: #cfcfcf;
+a {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  color: #202020;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
 }
 
 header {
+  border: solid 1px black;
   height: 60px;
   text-align: center;
   background-color: #1e88e5;
@@ -45,18 +51,29 @@ header {
 }
 
 nav {
-  text-align: right;
+  text-align: center;
   background-color: #9e9e9e;
-  padding: 1%;
-  height: 50vw;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+  height: 40vw;
+  width: 20%;
   bottom: 0;
 }
 
+nav article {
+  width: 100%;
+  background-color: #9e9e9e;
+  margin-bottom: 3vw;
+}
+
 nav p {
+  justify-content: center;
+  text-align: center;
   font-family: "Roboto Slab", serif;
 }
 
 footer {
+  border: solid 1px black;
   padding: 2%;
   justify-content: right;
   position: absolute;
@@ -70,37 +87,24 @@ footer {
 }
 
 .seleccionado {
-  background-color: #6ab7ff;
+  color: #005cb2;
 }
 
 .imagenPrincipal {
   justify-content: center;
 }
 
-@media (max-width: 1500px) {
-  nav {
-    text-align: right;
-    background-color: #9e9e9e;
-    padding: 1%;
-    height: 88vw;
-    bottom: 0;
-  }
+.contenido {
+  padding: 3%;
 }
-@media (max-width: 1050px) {
-  nav {
-    text-align: right;
-    background-color: #9e9e9e;
-    padding: 1%;
-    height: 120vw;
-    bottom: 0;
-  }
-}
+
 @media (max-width: 800px) {
   nav {
     text-align: right;
     background-color: #9e9e9e;
-    padding: 1%;
-    height: 165vw;
+    padding-right: 1%;
+    width: 50%;
+    height: 100vw;
   }
 }
 @media (max-width: 500px) {
@@ -114,7 +118,7 @@ footer {
   nav {
     text-align: center;
     background-color: #9e9e9e;
-    height: 90vw;
+    height: 140vw;
     width: 100%;
   }
 
