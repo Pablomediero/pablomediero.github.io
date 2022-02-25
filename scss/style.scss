@@ -57,7 +57,7 @@ nav {
     background-color: $colorSecundario;
     border-left: solid 1px black;
     border-right: solid 1px black;
-    height: 40vw;
+    height: 42vw;
     width: 15%;
     bottom: 0;
 }
@@ -101,6 +101,27 @@ footer{
     margin-left: 30px;
 }
 
+@media(max-width:1400px){
+    nav {
+        text-align: right;
+        background-color: $colorSecundario;
+        width: 16%;
+        height: 40vw;
+        font-size: small;
+       
+    }
+    nav article{
+        width: 100%;
+        background-color: $colorSecundario;
+        margin-bottom: 1vw;
+    }
+
+    .contenido{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+}
+
 @media(max-width:800px){
     nav {
         text-align: right;
@@ -139,13 +160,14 @@ footer{
        
     }
 
-    main{
-        height: 140vw; 
+    .seleccionado{
+        color: $colorPrimario_oscuro;
     }
 
-    .seleccionado{
-        margin-top: 20px;
-        color: $colorPrimario_oscuro;
+    .contenido{
+        
+        height: 80vw;
+        margin-bottom: 10%;
     }
 
     footer{
