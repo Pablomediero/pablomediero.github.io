@@ -45,20 +45,22 @@ a{
 }
 
 header{
+    display: flex;
     border: solid 1px black;
     height: 60px;
-    text-align: center;
+    justify-content: center;
     background-color: $colorPrimario;
     font-family: $tipografia_encabezado;
 }
 
 nav {
+    padding-left: 1%;
     text-align: center;
     background-color: $colorSecundario;
     border-left: solid 1px black;
     border-right: solid 1px black;
-    height: 42vw;
-    width: 15%;
+    height: 40vw;
+    width: 20%;
     bottom: 0;
 }
 
@@ -70,7 +72,7 @@ nav article{
 
 nav p{
     justify-content: center;
-    text-align: center;
+    text-align: left;
     font-family: $tipografia_encabezado;
 }
 
@@ -88,53 +90,97 @@ footer{
     background-color: $colorPrimario;
 }
 
-.seleccionado{
-    color: $colorPrimario_oscuro;
+img{
+    width: 30%;
+    height: auto;
 }
 
-.imagenPrincipal{
-    justify-content: center;
+#imagen{
+    text-align: center;
+    padding: 2%;
+}
+
+#logo img{
+    width: 10%;
+    height: auto;
+}
+
+
+#logo{
+    width: 30%;
+    text-align: left;
+    height: 100%;
+
+}
+
+#titulo{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+
+#form{
+    width: 30%;
+    height: 100%;
+    margin-top: 1vw;
+    text-align: right;
+}
+
+.seleccionado{
+    color: $colorPrimario_oscuro;
 }
 
 .contenido{
     margin-top: 20px;
     margin-left: 30px;
+    margin-right: 30px;
 }
 
-@media(max-width:1400px){
-    nav {
-        text-align: right;
-        background-color: $colorSecundario;
-        width: 16%;
-        height: 40vw;
-        font-size: small;
-       
-    }
-    nav article{
-        width: 100%;
-        background-color: $colorSecundario;
-        margin-bottom: 1vw;
-    }
-
-    .contenido{
-        margin-top: 20px;
-        margin-left: 30px;
-    }
+.texto{
+    font-family: $tipografia_parrafo;
 }
 
 @media(max-width:800px){
     nav {
+        padding-left: 1%;
         text-align: right;
         background-color: $colorSecundario;
         padding-right: 1%;
         width: 50%;
-        height: 90vw;
+        height: 80vw;
+       
+    }
+    nav p {
+        text-align: left;
+       
        
     }
     nav article{
         width: 100%;
         background-color: $colorSecundario;
         margin-bottom: 4vw;
+    }
+
+    img{
+        width: 35%;
+        height: auto;
+    }
+
+    #logo{
+        width: 20%;
+        text-align: right;
+        height: 100%;
+    
+    }
+    
+    #titulo{
+        width: 80%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #form{
+        display: none;
     }
 
     .contenido{
@@ -144,6 +190,10 @@ footer{
 }
 
 @media(max-width:500px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
 
     section{
         height: 100%;
@@ -160,14 +210,41 @@ footer{
        
     }
 
+    main{
+        height: 140vw; 
+        margin-bottom: 30px;
+    }
+
+    
+
+    #logo img{
+        width: 40%;
+        height: auto;
+    }
+    
+    #logo{
+        width: 30%;
+        text-align: center;
+        height: 100%;
+    
+    }
+    
+    #titulo{
+        width: 70%;
+        height: 100%;
+        text-align: left;
+    }
+
+    #form{
+        display: none;
+    }
+
     .seleccionado{
         color: $colorPrimario_oscuro;
     }
 
     .contenido{
-        
-        height: 80vw;
-        margin-bottom: 10%;
+        margin-bottom: 60px;
     }
 
     footer{
